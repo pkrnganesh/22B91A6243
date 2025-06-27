@@ -1,8 +1,6 @@
 const axios = require('axios');
-require('dotenv').config(); // Top of the file
-// require('dotenv').config({ path: __dirname + '/.env' });
+require('dotenv').config(); 
 const API_URL = "http://20.244.56.144/evaluation-service/logs";
-console.log("Using token:", process.env.ACCESS_TOKEN);
 const ACCESS_TOKEN = process.env.ACCESS_TOKEN; 
 
 async function log(stack, level, packageName, message) {
